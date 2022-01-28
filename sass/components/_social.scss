@@ -1,0 +1,35 @@
+.social__links,
+.join-list__links--compont {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+/*^ СТИЛИ ДЛЯ СОЦ СЕТЕЙ В БЛОКЕ TEAM  */
+.social-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.social__links {
+  transition: background-color 250ms var(--animate);
+  color: #afb1b8;
+}
+
+.social__icons {
+  fill: currentColor;
+}
+
+.social__links:hover,
+.social__links:focus {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+
+.social-list__items + .social-list__items {
+  margin-left: 10px;
+}

@@ -1,0 +1,62 @@
+.light-logo {
+  color: var(--text-color-actve);
+}
+
+.footer {
+  background-color: var(--footer-color);
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-list {
+  list-style: none;
+  margin-top: 16px;
+}
+
+.footer-list__link {
+  transition: color 250ms var(--animate);
+  margin-right: 70px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-list__link:hover,
+.footer-list__link:focus {
+  color: var(--text-color-actve);
+}
+
+.footer--elements {
+  display: flex;
+}
+
+.join-list {
+  display: flex;
+  list-style: none;
+  margin-top: 20px;
+}
+
+.join-list__links {
+  transition: color 250ms var(--animate);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.join-list__icons {
+  fill: #ffffff;
+}
+
+.join-list__links:hover,
+.join-list__links:focus {
+  background-color: var(--accent-color);
+}
+
+.join-list__item + .join-list__item {
+  margin-left: 10px;
+}

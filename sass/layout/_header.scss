@@ -1,0 +1,136 @@
+.container__header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.container--position,
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
+/* убирает правый марджем у последней ссылки */
+.site-nav__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+/* убирает правый марджем у последней ссылки 
+в блоке контакты*/
+.contact__link:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site__link,
+.contact__link {
+  transition: color var(--animate);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  text-decoration: none;
+}
+
+/* блок контактов в хедере */
+.contact {
+  display: flex;
+}
+
+/* елемент ссылки в хедере */
+.site__link {
+  color: var(--primary-text-color);
+}
+
+/*^ Делает активной вкладку текущей страницы */
+.site-link--active {
+  color: var(--accent-color);
+}
+
+/* елемент ссылки в хедере */
+.site__link {
+  color: var(--primary-text-color);
+}
+.site-nav__item {
+  position: relative;
+}
+
+/* нижняя полоска на активной странице */
+.site-link--active::after {
+  position: absolute;
+  content: '';
+  height: 4px;
+  border-radius: 4px;
+  width: 100%;
+  background-color: var(--button-hover);
+  left: 0;
+  bottom: -33px;
+}
+
+/* фиксированая шапка */
+.header {
+  border: 1px solid var(--border-header);
+}
+
+/*^ ---------- Стиль для ЛОГОТИПА -----------------------*/
+.logo {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.logo:hover,
+.logo:focus {
+  color: coral;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.container__logo {
+  margin-right: 93px;
+  padding: 20px 0;
+}
+
+.logo__dark {
+  color: var(--primary-text-color);
+}
+
+/*^  Стили для ссылок хедере и контактов общие */
+.site-nav {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  list-style: none;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+}
+
+.contact__link {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--text-color);
+  list-style: none;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+}
+
+/*^ Стили для контактов в хедере*/
+
+/* svg в хедере для контактов */
+.contact__icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+/*^ Стили для ссылок навигации и контктов хедера при наведении*/
+.site__link:hover,
+.contact__link:hover,
+.site__link:focus,
+.contact__link:focus {
+  color: var(--accent-color);
+}

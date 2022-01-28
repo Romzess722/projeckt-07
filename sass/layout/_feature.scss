@@ -1,0 +1,49 @@
+.feature-list {
+  display: flex;
+  list-style: none;
+}
+
+.feature-list__item {
+  width: 270px;
+}
+
+.feature-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.feature-list__element {
+  display: flex;
+  justify-content: center;
+  background: var(--background-team);
+  padding: 25px 100px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.feature-title {
+  color: #212121;
+}
+
+.feature-list__descriotion {
+  margin-top: 10px;
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: #757575;
+}
+
+.work-img {
+  list-style: none;
+  display: flex;
+}
+
+/* убираем последний марджин */
+.work-img__picture:not(:last-child) {
+  margin-right: 30px;
+}
