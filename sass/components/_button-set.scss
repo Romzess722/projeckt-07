@@ -11,16 +11,16 @@
 .button-menu:hover,
 .button-menu:focus {
   transform: scale(1);
-  background-color: var(--accent-color);
-  color: var(--background-team);
+  background-color: $accent-color;
+  color: $background-team;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.25);
 
-  transition: background-color 250ms var(--animate), color 250ms;
+  transition: background-color 250ms $animate, color 250ms;
 }
 
 .button-menu {
-  background-color: var(--background-team);
+  background-color: $background-team;
   font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
@@ -30,5 +30,5 @@
   border-radius: 4px;
   border: transparent;
 
-  transition: background-color 250ms var(--animate), color 1250ms;
+  transition: background-color 250ms $animate, color 1250ms;
 }

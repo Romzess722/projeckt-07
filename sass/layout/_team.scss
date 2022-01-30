@@ -1,5 +1,5 @@
 .aur-team {
-  background-color: var(--background-team);
+  background-color: $background-team;
 }
 
 .aur-team {
@@ -14,7 +14,7 @@
 }
 
 .team__item {
-  background-color: var(--text-color-actve);
+  background-color: $text-color-actve;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -36,7 +36,7 @@
 }
 .card-content {
   padding: 20px 24px;
-  border: 1px solid var(--border-card-portfl);
+  border: 1px solid $border-card-portfl;
 }
 
 .team__content {
@@ -50,7 +50,7 @@
   font-size: 16px;
   line-height: 19px;
   text-align: center;
-  color: var(--primary-text-color);
+  color: $primary-text-color;
 }
 
 .team__description {
@@ -59,6 +59,6 @@
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-  color: var(--text-color);
+  color: $text-color;
   margin-top: 10px;
 }

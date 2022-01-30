@@ -15,7 +15,7 @@
 }
 
 .hero-button {
-  transition: background-color var(--animate);
+  transition: background-color $animate;
   padding-left: 29px;
   padding-right: 29px;
 }
@@ -30,11 +30,11 @@
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  color: var(--text-color-actve);
-  background-color: var(--accent-color);
+  color: $text-color-actve;
+  background-color: $accent-color;
 }
 
 .hero-button:hover,
 .hero-button:focus {
-  background-color: var(--button-hover);
+  background-color: $button-hover;
 }

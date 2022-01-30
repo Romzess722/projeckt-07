@@ -5,19 +5,20 @@
 
 /*^----------PROJECKTS--PORTFOLIO----------------  */
 .projeckts {
+  $card-set-gap: 30px;
   margin-top: 50px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  margin-left: var calc(-1 * var(--card-set-gap));
-  margin-bottom: var calc(-1 * var(--card-set-gap));
+  margin-left: calc(-1 * #{$card-set-gap});
+  margin-bottom: calc(-1 * #{$card-set-gap});
 }
 
 .projeckts > .projeckts-item {
-  flex-basis: calc(100% / 3 - var(--card-set-gap));
-  margin-left: var(--card-set-gap);
-  margin-bottom: var(--card-set-gap);
+  flex-basis: calc(100% / 3 - #{$card-set-gap});
+  margin-left: $card-set-gap;
+  margin-bottom: $card-set-gap;
   position: relative;
 }
 
@@ -62,7 +63,7 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
-  color: var(--primary-text-color);
+  color: $primary-text-color;
 }
 
 .projeckts-content__description {
@@ -70,5 +71,5 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 1.87;
-  color: var(--text-color);
+  color: $text-color;
 }

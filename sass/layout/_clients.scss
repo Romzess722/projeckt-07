@@ -14,7 +14,7 @@
 }
 
 .clients__links {
-  transition: color 250ms var(--animate);
+  transition: color 250ms $animate;
   padding: 16px 32px;
   color: #afb8b1;
 }
@@ -25,7 +25,7 @@
 
 .clients__links:hover,
 .clients__links:focus {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 .clients__items + .clients__items {
   margin-left: 30px;

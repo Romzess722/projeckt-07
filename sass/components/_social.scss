@@ -16,7 +16,7 @@
 }
 
 .social__links {
-  transition: background-color 250ms var(--animate);
+  transition: background-color 250ms $animate;
   color: #afb1b8;
 }
 
@@ -26,7 +26,7 @@
 
 .social__links:hover,
 .social__links:focus {
-  background-color: var(--accent-color);
+  background-color: $accent-color;
   color: #ffffff;
 }
 

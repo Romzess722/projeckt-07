@@ -22,7 +22,7 @@
 
 .site__link,
 .contact__link {
-  transition: color var(--animate);
+  transition: color $animate;
   padding-top: 32px;
   padding-bottom: 32px;
   text-decoration: none;
@@ -35,17 +35,17 @@
 
 /* елемент ссылки в хедере */
 .site__link {
-  color: var(--primary-text-color);
+  color: $primary-text-color;
 }
 
 /*^ Делает активной вкладку текущей страницы */
 .site-link--active {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 /* елемент ссылки в хедере */
 .site__link {
-  color: var(--primary-text-color);
+  color: $primary-text-color;
 }
 .site-nav__item {
   position: relative;
@@ -58,14 +58,14 @@
   height: 4px;
   border-radius: 4px;
   width: 100%;
-  background-color: var(--button-hover);
+  background-color: $button-hover;
   left: 0;
   bottom: -33px;
 }
 
 /* фиксированая шапка */
 .header {
-  border: 1px solid var(--border-header);
+  border: 1px solid $border-header;
 }
 
 /*^ ---------- Стиль для ЛОГОТИПА -----------------------*/
@@ -76,7 +76,7 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  color: var(--accent-color);
+  color: $accent-color;
   text-decoration: none;
 }
 
@@ -92,7 +92,7 @@
 }
 
 .logo__dark {
-  color: var(--primary-text-color);
+  color: $primary-text-color;
 }
 
 /*^  Стили для ссылок хедере и контактов общие */
@@ -112,7 +112,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  color: var(--text-color);
+  color: $text-color;
   list-style: none;
   letter-spacing: 0.02em;
   display: flex;
@@ -132,5 +132,5 @@
 .contact__link:hover,
 .site__link:focus,
 .contact__link:focus {
-  color: var(--accent-color);
+  color: $accent-color;
 }

@@ -16,7 +16,7 @@
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: var(--primary-text-color);
+  color: $primary-text-color;
 }
 
 .form__field {
@@ -41,7 +41,7 @@
   top: 50%;
   left: 40px;
   transform: translateY(-50%);
-  transition: transform 250ms var(--animate);
+  transition: transform 250ms $animate;
 }
 
 .field-icon {
@@ -58,7 +58,7 @@
 }
 
 .form-sent:focus-within .sent-label {
-  color: var(--accent-color);
+  color: $accent-color;
   left: -45px;
   transform: translateY(-10px) rotate(-90deg);
   transition-duration: 1500ms;
@@ -79,7 +79,7 @@
 }
 
 .form__input:focus ~ .field-icon {
-  fill: var(--accent-color);
+  fill: $accent-color;
 }
 
 /*^ -------СТИЛИ ДЛЯ TEXTAREA------------ */
@@ -106,7 +106,7 @@
   top: 8%;
   left: 40px;
   transform: translateY(-8%);
-  transition: transform 250ms var(--animate);
+  transition: transform 250ms $animate;
 }
 
 .comment-icon {
@@ -121,17 +121,17 @@
 /*^ аналог функционала  form__label 
 который идет за form__label и свойство*/
 .form__comment:focus-within .comment-icon {
-  fill: var(--accent-color);
+  fill: $accent-color;
 }
 
 .form__field:focus-within .form__input,
 .form__comment:focus-within .form-textarea {
-  border: 1px solid var(--accent-color);
+  border: 1px solid $accent-color;
 }
 
 .form-textarea:focus + .comment-label,
 .form-textarea:not(:placeholder-shown) + .comment-label {
-  color: var(--accent-color);
+  color: $accent-color;
   left: 0px;
   transform: translateY(-42px);
 }
