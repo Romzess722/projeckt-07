@@ -4,20 +4,29 @@
   padding-left: 29px;
   padding-right: 29px;
   min-width: 200px;
+  @media screen and(max-width: 1199px) {
+    margin: 20px auto 0;
+  }
 }
 
-.order-servise-btn:hover {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
 .order-servise-btn {
   padding-left: 53px;
   padding-right: 53px;
+
+  &:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
 }
 
 .hero-button {
   transition: background-color $animate;
   padding-left: 29px;
   padding-right: 29px;
+
+  &:hover,
+  &:focus {
+    background-color: $button-hover;
+  }
 }
 
 .hero-button--component {
@@ -32,9 +41,4 @@
   letter-spacing: 0.06em;
   color: $text-color-actve;
   background-color: $accent-color;
-}
-
-.hero-button:hover,
-.hero-button:focus {
-  background-color: $button-hover;
 }

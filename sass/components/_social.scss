@@ -1,4 +1,4 @@
-.social__links,
+.social-list__link,
 .join-list__links--compont {
   width: 44px;
   height: 44px;
@@ -13,9 +13,10 @@
   list-style: none;
   display: flex;
   justify-content: center;
+  margin-top: 16px;
 }
 
-.social__links {
+.social-list__link {
   transition: background-color 250ms $animate;
   color: #afb1b8;
 }
@@ -24,8 +25,8 @@
   fill: currentColor;
 }
 
-.social__links:hover,
-.social__links:focus {
+.social-list__link:hover,
+.social-list__link:focus {
   background-color: $accent-color;
   color: #ffffff;
 }
